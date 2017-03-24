@@ -1,0 +1,47 @@
+{
+  "name": "@orisomething/podcasts-rss-reader",
+  "version": "0.0.1",
+  "description": "RSS reader for podcasts",
+  "author": "Ori Livni",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "flow": "flow",
+    "fmt:js": "prettier --trailing-comma=all --write 'src/**/*.js'",
+    "test": "ava",
+    "test:watch": "ava -v -w"
+  },
+  "keywords": [
+    "rss",
+    "podcast"
+  ],
+  "dependencies": {
+    "htmlparser2": "^3.9.0",
+    "lodash": "^4.0.0",
+    "url": "^0.11.0",
+    "xml2js": "^0.4.16"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "eslint": "^3.19.0",
+    "flow-bin": "^0.42.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mock-fs": "^4.2.0",
+    "nock": "^9.0.11",
+    "prettier": "^0.22.0"
+  },
+  "ava": {
+    "failFast": false,
+    "failWithoutAssertions": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
